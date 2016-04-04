@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Battleship</title>
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css" type="text/css">
+    <link rel="stylesheet" href="build/css/app.css" type="text/css">
+    <script src="js/app.js"></script>
+    <script src="js/game.js"></script>
+    <script src="js/board.js"></script>
+  </head>
+  <body>
+    <h1 class="headline">Battleship</h1>
+    <div class="main">
+      <div id="player0" class="board">
+        <div class="row">
+          <div row="0" col="0" class="cell"></div>
+          <div row="0" col="1" class="cell"></div>
+          <div row="0" col="2" class="cell"></div>
+          <div row="0" col="3" class="cell"></div>
+          <div row="0" col="4" class="cell"></div>
+          <div row="0" col="5" class="cell"></div>
+          <div row="0" col="6" class="cell"></div>
+          <div row="0" col="7" class="cell"></div>
+          <div row="0" col="8" class="cell"></div>
+          <div row="0" col="9" class="cell"></div>
+        </div>
+        <div class="row">
+          <div row="1" col="0" class="cell"></div>
+          <div row="1" col="1" class="cell"></div>
+          <div row="1" col="2" class="cell"></div>
+          <div row="1" col="3" class="cell"></div>
+          <div row="1" col="4" class="cell"></div>
+          <div row="1" col="5" class="cell"></div>
+          <div row="1" col="6" class="cell"></div>
+          <div row="1" col="7" class="cell"></div>
+          <div row="1" col="8" class="cell"></div>
+          <div row="1" col="9" class="cell"></div>
+        </div>
+        <div class="row">
+          <div row="2" col="0" class="cell"></div>
+          <div row="2" col="1" class="cell"></div>
+          <div row="2" col="2" class="cell"></div>
+          <div row="2" col="3" class="cell"></div>
+          <div row="2" col="4" class="cell"></div>
+          <div row="2" col="5" class="cell"></div>
+          <div row="2" col="6" class="cell"></div>
+          <div row="2" col="7" class="cell"></div>
+          <div row="2" col="8" class="cell"></div>
+          <div row="2" col="9" class="cell"></div>
+        </div>
+        <div class="row">
+          <div row="3" col="0" class="cell"></div>
+          <div row="3" col="1" class="cell"></div>
+          <div row="3" col="2" class="cell"></div>
+          <div row="3" col="3" class="cell"></div>
+          <div row="3" col="4" class="cell"></div>
+          <div row="3" col="5" class="cell"></div>
+          <div row="3" col="6" class="cell"></div>
+          <div row="3" col="7" class="cell"></div>
+          <div row="3" col="8" class="cell"></div>
+          <div row="3" col="9" class="cell"></div>
+        </div>
+        <div class="row">
+          <div row="4" col="0" class="cell"></div>
+          <div row="4" col="1" class="cell"></div>
+          <div row="4" col="2" class="cell"></div>
+          <div row="4" col="3" class="cell"></div>
+          <div row="4" col="4" class="cell"></div>
+          <div row="4" col="5" class="cell"></div>
+          <div row="4" col="6" class="cell"></div>
+          <div row="4" col="7" class="cell"></div>
+          <div row="4" col="8" class="cell"></div>
+          <div row="4" col="9" class="cell"></div>
+        </div>
+        <div class="row">
+          <div row="5" col="0" class="cell"></div>
+          <div row="5" col="1" class="cell"></div>
+          <div row="5" col="2" class="cell"></div>
+          <div row="5" col="3" class="cell"></div>
+          <div row="5" col="4" class="cell"></div>
+          <div row="5" col="5" class="cell"></div>
+          <div row="5" col="6" class="cell"></div>
+          <div row="5" col="7" class="cell"></div>
+          <div row="5" col="8" class="cell"></div>
+          <div row="5" col="9" class="cell"></div>
+        </div>
+        <div class="row">
+          <div row="6" col="0" class="cell"></div>
+          <div row="6" col="1" class="cell"></div>
+          <div row="6" col="2" class="cell"></div>
+          <div row="6" col="3" class="cell"></div>
+          <div row="6" col="4" class="cell"></div>
+          <div row="6" col="5" class="cell"></div>
+          <div row="6" col="6" class="cell"></div>
+          <div row="6" col="7" class="cell"></div>
+          <div row="6" col="8" class="cell"></div>
+          <div row="6" col="9" class="cell"></div>
+        </div>
+        <div class="row">
+          <div row="7" col="0" class="cell"></div>
+          <div row="7" col="1" class="cell"></div>
+          <div row="7" col="2" class="cell"></div>
+          <div row="7" col="3" class="cell"></div>
+          <div row="7" col="4" class="cell"></div>
+          <div row="7" col="5" class="cell"></div>
+          <div row="7" col="6" class="cell"></div>
+          <div row="7" col="7" class="cell"></div>
+          <div row="7" col="8" class="cell"></div>
+          <div row="7" col="9" class="cell"></div>
+        </div>
+        <div class="row">
+          <div row="8" col="0" class="cell"></div>
+          <div row="8" col="1" class="cell"></div>
+          <div row="8" col="2" class="cell"></div>
+          <div row="8" col="3" class="cell"></div>
+          <div row="8" col="4" class="cell"></div>
+          <div row="8" col="5" class="cell"></div>
+          <div row="8" col="6" class="cell"></div>
+          <div row="8" col="7" class="cell"></div>
+          <div row="8" col="8" class="cell"></div>
+          <div row="8" col="9" class="cell"></div>
+        </div>
+        <div class="row">
+          <div row="9" col="0" class="cell"></div>
+          <div row="9" col="1" class="cell"></div>
+          <div row="9" col="2" class="cell"></div>
+          <div row="9" col="3" class="cell"></div>
+          <div row="9" col="4" class="cell"></div>
+          <div row="9" col="5" class="cell"></div>
+          <div row="9" col="6" class="cell"></div>
+          <div row="9" col="7" class="cell"></div>
+          <div row="9" col="8" class="cell"></div>
+          <div row="9" col="9" class="cell"></div>
+        </div>
+        <div id="player0-ships"></div>
+      </div>
+      <div class="in-between-boards"></div>
+      <div id="player1" class="board">
+        <div class="row">
+          <div row="0" col="0" class="cell"></div>
+          <div row="0" col="1" class="cell"></div>
+          <div row="0" col="2" class="cell"></div>
+          <div row="0" col="3" class="cell"></div>
+          <div row="0" col="4" class="cell"></div>
+          <div row="0" col="5" class="cell"></div>
+          <div row="0" col="6" class="cell"></div>
+          <div row="0" col="7" class="cell"></div>
+          <div row="0" col="8" class="cell"></div>
+          <div row="0" col="9" class="cell"></div>
+        </div>
+        <div class="row">
+          <div row="1" col="0" class="cell"></div>
+          <div row="1" col="1" class="cell"></div>
+          <div row="1" col="2" class="cell"></div>
+          <div row="1" col="3" class="cell"></div>
+          <div row="1" col="4" class="cell"></div>
+          <div row="1" col="5" class="cell"></div>
+          <div row="1" col="6" class="cell"></div>
+          <div row="1" col="7" class="cell"></div>
+          <div row="1" col="8" class="cell"></div>
+          <div row="1" col="9" class="cell"></div>
+        </div>
+        <div class="row">
+          <div row="2" col="0" class="cell"></div>
+          <div row="2" col="1" class="cell"></div>
+          <div row="2" col="2" class="cell"></div>
+          <div row="2" col="3" class="cell"></div>
+          <div row="2" col="4" class="cell"></div>
+          <div row="2" col="5" class="cell"></div>
+          <div row="2" col="6" class="cell"></div>
+          <div row="2" col="7" class="cell"></div>
+          <div row="2" col="8" class="cell"></div>
+          <div row="2" col="9" class="cell"></div>
+        </div>
+        <div class="row">
+          <div row="3" col="0" class="cell"></div>
+          <div row="3" col="1" class="cell"></div>
+          <div row="3" col="2" class="cell"></div>
+          <div row="3" col="3" class="cell"></div>
+          <div row="3" col="4" class="cell"></div>
+          <div row="3" col="5" class="cell"></div>
+          <div row="3" col="6" class="cell"></div>
+          <div row="3" col="7" class="cell"></div>
+          <div row="3" col="8" class="cell"></div>
+          <div row="3" col="9" class="cell"></div>
+        </div>
+        <div class="row">
+          <div row="4" col="0" class="cell"></div>
+          <div row="4" col="1" class="cell"></div>
+          <div row="4" col="2" class="cell"></div>
+          <div row="4" col="3" class="cell"></div>
+          <div row="4" col="4" class="cell"></div>
+          <div row="4" col="5" class="cell"></div>
+          <div row="4" col="6" class="cell"></div>
+          <div row="4" col="7" class="cell"></div>
+          <div row="4" col="8" class="cell"></div>
+          <div row="4" col="9" class="cell"></div>
+        </div>
+        <div class="row">
+          <div row="5" col="0" class="cell"></div>
+          <div row="5" col="1" class="cell"></div>
+          <div row="5" col="2" class="cell"></div>
+          <div row="5" col="3" class="cell"></div>
+          <div row="5" col="4" class="cell"></div>
+          <div row="5" col="5" class="cell"></div>
+          <div row="5" col="6" class="cell"></div>
+          <div row="5" col="7" class="cell"></div>
+          <div row="5" col="8" class="cell"></div>
+          <div row="5" col="9" class="cell"></div>
+        </div>
+        <div class="row">
+          <div row="6" col="0" class="cell"></div>
+          <div row="6" col="1" class="cell"></div>
+          <div row="6" col="2" class="cell"></div>
+          <div row="6" col="3" class="cell"></div>
+          <div row="6" col="4" class="cell"></div>
+          <div row="6" col="5" class="cell"></div>
+          <div row="6" col="6" class="cell"></div>
+          <div row="6" col="7" class="cell"></div>
+          <div row="6" col="8" class="cell"></div>
+          <div row="6" col="9" class="cell"></div>
+        </div>
+        <div class="row">
+          <div row="7" col="0" class="cell"></div>
+          <div row="7" col="1" class="cell"></div>
+          <div row="7" col="2" class="cell"></div>
+          <div row="7" col="3" class="cell"></div>
+          <div row="7" col="4" class="cell"></div>
+          <div row="7" col="5" class="cell"></div>
+          <div row="7" col="6" class="cell"></div>
+          <div row="7" col="7" class="cell"></div>
+          <div row="7" col="8" class="cell"></div>
+          <div row="7" col="9" class="cell"></div>
+        </div>
+        <div class="row">
+          <div row="8" col="0" class="cell"></div>
+          <div row="8" col="1" class="cell"></div>
+          <div row="8" col="2" class="cell"></div>
+          <div row="8" col="3" class="cell"></div>
+          <div row="8" col="4" class="cell"></div>
+          <div row="8" col="5" class="cell"></div>
+          <div row="8" col="6" class="cell"></div>
+          <div row="8" col="7" class="cell"></div>
+          <div row="8" col="8" class="cell"></div>
+          <div row="8" col="9" class="cell"></div>
+        </div>
+        <div class="row">
+          <div row="9" col="0" class="cell"></div>
+          <div row="9" col="1" class="cell"></div>
+          <div row="9" col="2" class="cell"></div>
+          <div row="9" col="3" class="cell"></div>
+          <div row="9" col="4" class="cell"></div>
+          <div row="9" col="5" class="cell"></div>
+          <div row="9" col="6" class="cell"></div>
+          <div row="9" col="7" class="cell"></div>
+          <div row="9" col="8" class="cell"></div>
+          <div row="9" col="9" class="cell"></div>
+        </div>
+        <div id="player1-ships"></div>
+      </div>
+    </div>
+    <p id="winningText"></p>
+  </body>
+</html>

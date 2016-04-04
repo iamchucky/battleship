@@ -1,0 +1,19 @@
+{
+  "name": "battleship",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "test": "NODE_ENV=test mocha --recursive",
+    "test:watch": "NODE_ENV=test mocha --recursive --watch"
+  },
+  "devDependencies": {
+    "expect": "^1.6.0",
+    "gulp": "^3.9.0",
+    "gulp-jade": "^1.1.0",
+    "gulp-sass": "^2.1.1",
+    "require-dir": "^0.3.0",
+    "jsdom": "^6.5.1",
+    "mocha": "^2.2.5",
+    "mocha-jsdom": "^1.0.0"
+  }
+}

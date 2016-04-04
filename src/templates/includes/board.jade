@@ -1,0 +1,11 @@
+- var col = 0 
+- var row = 0 
+- var size = 10
+while row < size
+  - col = 0
+  .row
+    while col < size
+      - col++
+      .cell(row=row, col=col-1)
+
+  - row++
